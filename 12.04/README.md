@@ -32,6 +32,7 @@ filter
 ftp
 gd
 gettext
+gmp
 hash
 iconv
 imagick

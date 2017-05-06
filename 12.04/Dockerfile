@@ -4,10 +4,10 @@ LABEL maintainer exploitfate
 
 # Install additional packages
 RUN apt-get update
-RUN apt-get install -y zsh git curl rsync openssh-client
+RUN apt-get install -y git curl rsync openssh-client
 
 # Install php packages
-RUN apt-get install -y php5-cli php5-curl php5-gd php5-imagick php5-intl php5-mcrypt  php5-memcache php5-memcached php5-mysql php5-pgsql php5-xcache php5-xmlrpc
+RUN apt-get install -y php5-cli php5-curl php5-gd php5-imagick php5-intl php5-mcrypt php5-gmp php5-memcache php5-memcached php5-mysql php5-pgsql php5-xcache php5-xmlrpc
 
 # Install composer and put binary into $PATH
 RUN curl -sS https://getcomposer.org/installer | php \
@@ -37,4 +37,4 @@ COPY php.sh /root/php.sh
 RUN chmod 744 /root/php.sh
 ENTRYPOINT ["/root/php.sh"]
 
-CMD ["/bin/zsh"]
+CMD ["/bin/bash"]
