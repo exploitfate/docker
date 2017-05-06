@@ -1,13 +1,4 @@
-# Docker
-
-Images with pre-installed `composer`, `phpunit`, `phpcs|phpcbf`
-
-You can provide github token `GITHUB_OAUTH_TOKEN` if you are using
-composer a lot in non-interactive https://github.com/settings/tokens
-
-
-
-## Ubuntu 12.04 / PHP 5.3
+# Dockerfile for Ubuntu 12.04 / PHP 5.3
 
 mount point `/var/www/html`
 
