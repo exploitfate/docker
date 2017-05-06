@@ -17,10 +17,10 @@ RUN curl -sS https://getcomposer.org/installer | php \
 # Install composer asset plugin
 RUN composer global require "fxp/composer-asset-plugin:^1.3.1"
 
-# Install phpunit 4.8.*
+# Install phpunit 6.1.*
 RUN composer global require --dev phpunit/phpunit ^6.1
 
-# Install PHP Code sniffer 2.*
+# Install PHP Code sniffer 3.*
 RUN composer global require squizlabs/php_codesniffer ^3
 
 # Install PHP Xdebug package
