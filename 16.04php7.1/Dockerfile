@@ -4,7 +4,7 @@ LABEL maintainer exploitfate
 
 # Install additional packages
 RUN apt-get update
-RUN apt-get install -y git curl rsync openssh-client zip unzip
+RUN apt-get install -y git curl rsync openssh-client zip unzip apt-transport-https
 
 RUN apt-get install -y software-properties-common
 

@@ -4,7 +4,7 @@ LABEL maintainer exploitfate
 
 # Install additional packages
 RUN apt-get update
-RUN apt-get install -y git curl rsync openssh-client zip unzip
+RUN apt-get install -y git curl rsync openssh-client zip unzip apt-transport-https
 
 # Install php packages
 RUN apt-get install -y php5-cli php5-curl php5-gd php5-imagick php5-intl php5-mcrypt  php5-memcache php5-memcached php5-mysql php5-pgsql php5-gearman php5-xcache php5-xmlrpc php5-gmp php5-mongo php5-redis
