@@ -19,3 +19,9 @@ composer a lot in non-interactive mode https://github.com/settings/tokens
 
 
 ## [Ubuntu 17.04 / PHP 7.0](https://github.com/exploitfate/docker/blob/master/17.04/README.md)
+
+
+## [Ubuntu 18.04 / PHP 7.2](https://github.com/exploitfate/docker/blob/master/18.04/README.md)
+
+
+## [Ubuntu 19.04 / PHP 7.3](https://github.com/exploitfate/docker/blob/master/19.04/README.md)
