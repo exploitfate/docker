@@ -2,9 +2,11 @@ FROM ubuntu:18.04
 
 LABEL maintainer exploitfate
 
+RUN apt-get install -y apt-transport-https
+
 # Install additional packages
 RUN apt update
-RUN apt install -y git curl rsync openssh-client zip unzip apt-transport-https
+RUN apt install -y git curl rsync openssh-client zip unzip
 
 # Install php packages
 RUN apt-get install -y sudo apt install php-bcmath php-bz2 php-cli php-curl php-gd php-gmp php-intl php-mysql php-pgsql php-xml php-zip php-memcache php-memcached php-redis php-mongodb php-imagick php-mbstring php-gearman
