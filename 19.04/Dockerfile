@@ -2,14 +2,14 @@ FROM ubuntu:19.04
 
 LABEL maintainer exploitfate
 
-RUN apt-get install -y apt-transport-https
+RUN DEBIAN_FRONTEND=noninteractive apt install -y apt-transport-https
 
 # Install additional packages
-RUN apt update
-RUN apt install -y git curl rsync openssh-client zip unzip
+RUN DEBIAN_FRONTEND=noninteractive apt update
+RUN DEBIAN_FRONTEND=noninteractive apt install -y git curl rsync openssh-client zip unzip
 
 # Install php packages
-RUN apt-get install -y sudo apt install php-bcmath php-bz2 php-cli php-curl php-gd php-gmp php-intl php-mysql php-pgsql php-xml php-zip php-memcache php-memcached php-redis php-mongodb php-imagick php-mbstring php-gearman
+RUN DEBIAN_FRONTEND=noninteractive apt-get install -y php-bcmath php-bz2 php-cli php-curl php-gd php-gmp php-intl php-mysql php-pgsql php-xml php-zip php-memcache php-memcached php-redis php-mongodb php-imagick php-mbstring php-gearman
 
 # Install composer and put binary into $PATH
 RUN curl -sS https://getcomposer.org/installer | php \

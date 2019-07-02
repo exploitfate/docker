@@ -2,12 +2,12 @@ FROM ubuntu:17.04
 
 LABEL maintainer exploitfate
 
-sed -i 's/security.ubuntu.com/old-releases.ubuntu.com/' /etc/apt/sources.list
-
-RUN apt-get install -y apt-transport-https
+RUN sed -i 's/security.ubuntu.com/old-releases.ubuntu.com/' /etc/apt/sources.list
+RUN sed -i 's/archive.ubuntu.com/old-releases.ubuntu.com/' /etc/apt/sources.list
 
 # Install additional packages
 RUN apt-get update
+RUN apt-get install -y apt-transport-https
 RUN apt-get install -y git curl rsync openssh-client zip unzip
 
 # Install php packages
